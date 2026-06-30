@@ -6,7 +6,15 @@ const variants: Variants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } },
 };
 
-export function Reveal({ children, delay = 0, className }: { children: ReactNode; delay?: number; className?: string }) {
+export function Reveal({
+  children,
+  delay = 0,
+  className,
+}: {
+  children: ReactNode;
+  delay?: number;
+  className?: string;
+}) {
   return (
     <motion.div
       className={className}
@@ -21,7 +29,13 @@ export function Reveal({ children, delay = 0, className }: { children: ReactNode
   );
 }
 
-export function RevealStagger({ children, className }: { children: ReactNode; className?: string }) {
+export function RevealStagger({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
   return (
     <motion.div
       className={className}

@@ -1,15 +1,51 @@
-// @lovable.dev/vite-tanstack-config already includes the following — do NOT add them manually
-// or the app will break with duplicate plugins:
-//   - tanstackStart, viteReact, tailwindcss, tsConfigPaths, nitro (build-only using cloudflare as a default target),
-//     componentTagger (dev-only), VITE_* env injection, @ path alias, React/TanStack dedupe,
-//     error logger plugins, and sandbox detection (port/host/strictPort).
-// You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
-import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
+import tailwindcss from "@tailwindcss/vite";
+import tsconfigPaths from "vite-tsconfig-paths";
+import fs from "node:fs/promises";
+import path from "node:path";
+
+function copyIndexTo404Plugin() {
+  return {
+    name: "copy-index-to-404",
+    closeBundle: async () => {
+      const outDir = path.resolve(process.cwd(), "docs");
+      const indexFile = path.join(outDir, "index.html");
+      const fallbackFile = path.join(outDir, "404.html");
+
+      try {
+        await fs.copyFile(indexFile, fallbackFile);
+      } catch (error: unknown) {
+        if (
+          error instanceof Error &&
+          "code" in error &&
+          (error as { code?: string }).code === "ENOENT"
+        ) {
+          return;
+        }
+        console.error("Unable to copy index.html to 404.html:", error);
+      }
+    },
+  };
+}
 
 export default defineConfig({
-  tanstackStart: {
-    // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
-    server: { entry: "server" },
+  base: "/radiant-build-framework/",
+  plugins: [
+    TanStackRouterVite(),
+    react(),
+    tailwindcss(),
+    tsconfigPaths({ projects: ["./tsconfig.json"] }),
+    copyIndexTo404Plugin(),
+  ],
+  resolve: {
+    alias: {
+      "@": path.resolve(process.cwd(), "./src"),
+    },
+  },
+  build: {
+    outDir: "docs",
+    emptyOutDir: true,
   },
 });

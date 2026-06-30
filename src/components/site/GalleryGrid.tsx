@@ -5,7 +5,7 @@ import { GALLERY } from "@/lib/site-data";
 
 export function GalleryGrid({ filter }: { filter?: string }) {
   const [open, setOpen] = useState(-1);
-  const items = filter && filter !== "All" ? GALLERY.filter(g => g.cat === filter) : GALLERY;
+  const items = filter && filter !== "All" ? GALLERY.filter((g) => g.cat === filter) : GALLERY;
 
   return (
     <>
@@ -30,7 +30,7 @@ export function GalleryGrid({ filter }: { filter?: string }) {
         open={open >= 0}
         index={open >= 0 ? open : 0}
         close={() => setOpen(-1)}
-        slides={items.map(g => ({ src: g.src }))}
+        slides={items.map((g) => ({ src: g.src }))}
       />
     </>
   );

@@ -5,12 +5,10 @@ import {
   createRootRouteWithContext,
   useRouter,
   HeadContent,
-  Scripts,
 } from "@tanstack/react-router";
-import { useEffect, type ReactNode } from "react";
+import { type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
 
@@ -39,9 +37,6 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
-  useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
-  }, [error]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -80,10 +75,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Akshaya Dental Hospital — Premium Family Dentistry in Hyderabad" },
-      { name: "description", content: "Akshaya Dental Hospital in Balanagar, Hyderabad. Led by Dr. Hitendra Singh. 4.9★ Google rating. Wisdom tooth extraction, smile correction, family & restorative dentistry." },
+      {
+        name: "description",
+        content:
+          "Akshaya Dental Hospital in Balanagar, Hyderabad. Led by Dr. Hitendra Singh. 4.9★ Google rating. Wisdom tooth extraction, smile correction, family & restorative dentistry.",
+      },
       { name: "author", content: "Akshaya Dental Hospital" },
       { property: "og:title", content: "Akshaya Dental Hospital" },
-      { property: "og:description", content: "Your Smile, Our Passion — premium family dentistry in Hyderabad." },
+      {
+        property: "og:description",
+        content: "Your Smile, Our Passion — premium family dentistry in Hyderabad.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
@@ -100,31 +102,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
     ],
   }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
-
-function RootShell({ children }: { children: ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   return (
     <QueryClientProvider client={queryClient}>
+      <HeadContent />
       <div className="flex min-h-screen flex-col bg-ivory">
         <SiteNav />
         <main className="flex-1">

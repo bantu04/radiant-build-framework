@@ -35,9 +35,7 @@ export function SiteNav() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6">
           <Link to="/" className="group flex items-baseline gap-2">
-            <span className="font-serif text-2xl tracking-tight text-charcoal">
-              Akshaya
-            </span>
+            <span className="font-serif text-2xl tracking-tight text-charcoal">Akshaya</span>
             <span className="font-serif italic text-sage-dark text-lg">dental</span>
           </Link>
 
@@ -84,7 +82,9 @@ export function SiteNav() {
       {open && (
         <div className="fixed inset-0 z-[60] bg-ivory animate-fade-in lg:hidden">
           <div className="flex items-center justify-between px-6 py-5 border-b border-blush/40">
-            <span className="font-serif text-2xl">Akshaya <span className="italic text-sage-dark">dental</span></span>
+            <span className="font-serif text-2xl">
+              Akshaya <span className="italic text-sage-dark">dental</span>
+            </span>
             <button aria-label="Close" onClick={() => setOpen(false)}>
               <X className="h-6 w-6" />
             </button>

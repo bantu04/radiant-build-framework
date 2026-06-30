@@ -29,70 +29,80 @@ export const SERVICES = [
     slug: "wisdom-tooth-extraction",
     title: "Wisdom Tooth Extraction",
     short: "Calm, precise removal — even for the most anxious patients.",
-    image: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80",
+    image:
+      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80",
     body: "From simple removals to surgical extractions of impacted molars, performed under sterile protocols with effective local anaesthesia and gentle, paced communication throughout.",
   },
   {
     slug: "smile-correction",
     title: "Smile Correction & Whitening",
     short: "Whitening, veneers and bonding for a smile that feels like yours.",
-    image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1200&q=80",
+    image:
+      "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1200&q=80",
     body: "In-chair professional whitening, composite bonding, ceramic veneers and gum aesthetics — designed to enhance rather than replace your natural smile.",
   },
   {
     slug: "dental-consultation",
     title: "Dental Consultation",
     short: "An unhurried assessment with full explanations and honest options.",
-    image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80",
+    image:
+      "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80",
     body: "Comprehensive oral examination, digital imaging when needed, and a written treatment plan — including costs, alternatives and what we'd recommend you delay.",
   },
   {
     slug: "family-dental-care",
     title: "Family Dental Care",
     short: "One trusted clinic for grandparents, parents and children.",
-    image: "https://images.unsplash.com/photo-1559591935-c6c92c6cdc44?auto=format&fit=crop&w=1200&q=80",
+    image:
+      "https://images.unsplash.com/photo-1559591935-c6c92c6cdc44?auto=format&fit=crop&w=1200&q=80",
     body: "Coordinated care plans across generations — routine cleanings, sealants for kids, dentures and gum care for seniors, all under one roof.",
   },
   {
     slug: "preventive-treatment",
     title: "Preventive Treatment & Scaling",
     short: "Cleanings, sealants and habits that keep dentistry minimal.",
-    image: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1200&q=80",
+    image:
+      "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1200&q=80",
     body: "Ultrasonic scaling, polishing, fluoride application and personalised home-care coaching — because the best treatment is the one you never need.",
   },
   {
     slug: "restorative-dentistry",
     title: "Restorative Dentistry",
     short: "Tooth-coloured fillings, crowns and bridges built to last.",
-    image: "https://images.unsplash.com/photo-1581585093487-7a909a76b09b?auto=format&fit=crop&w=1200&q=80",
+    image:
+      "https://images.unsplash.com/photo-1581585093487-7a909a76b09b?auto=format&fit=crop&w=1200&q=80",
     body: "Composite fillings, ceramic crowns, bridges and inlays — restoring function and form with materials selected for longevity and aesthetics.",
   },
   {
     slug: "root-canal-treatment",
     title: "Root Canal Treatment",
     short: "Single-visit endodontics with modern rotary instrumentation.",
-    image: "https://images.unsplash.com/photo-1612277795421-9bc7706a4a34?auto=format&fit=crop&w=1200&q=80",
+    image:
+      "https://images.unsplash.com/photo-1612277795421-9bc7706a4a34?auto=format&fit=crop&w=1200&q=80",
     body: "Rotary endodontics with apex location and obturation under magnification — comfortable, predictable, and usually completed in one or two visits.",
   },
   {
     slug: "pediatric-dentistry",
     title: "Pediatric Dentistry",
     short: "Gentle, playful, never rushed — building trust from the first visit.",
-    image: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=1200&q=80",
+    image:
+      "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=1200&q=80",
     body: "Preventive checks, fluoride, sealants and treatment of cavities for kids — paced patiently with parents present throughout.",
   },
   {
     slug: "dental-implants",
     title: "Dental Implants",
     short: "Permanent replacements that look and feel like your own teeth.",
-    image: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80",
+    image:
+      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80",
     body: "Single-tooth implants, multi-unit bridges and full-arch rehabilitation using internationally-recognised implant systems.",
   },
   {
     slug: "orthodontics",
     title: "Orthodontics & Aligners",
     short: "Traditional braces and modern clear aligners for every age.",
-    image: "https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=1200&q=80",
+    image:
+      "https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=1200&q=80",
     body: "Metal and ceramic braces, plus clear aligner therapy — with realistic timelines and honest pricing before you commit.",
   },
 ];
@@ -137,29 +147,93 @@ export const REVIEWS = [
 ];
 
 export const GALLERY = [
-  { src: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1400&q=80", w: 4, h: 5, cat: "Clinic" },
-  { src: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1400&q=80", w: 4, h: 3, cat: "Clinic" },
-  { src: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1400&q=80", w: 3, h: 4, cat: "Treatments" },
-  { src: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1400&q=80", w: 4, h: 5, cat: "Treatments" },
-  { src: "https://images.unsplash.com/photo-1581585093487-7a909a76b09b?auto=format&fit=crop&w=1400&q=80", w: 4, h: 3, cat: "Treatments" },
-  { src: "https://images.unsplash.com/photo-1559591935-c6c92c6cdc44?auto=format&fit=crop&w=1400&q=80", w: 3, h: 4, cat: "Team" },
-  { src: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=1400&q=80", w: 4, h: 3, cat: "Team" },
-  { src: "https://images.unsplash.com/photo-1612277795421-9bc7706a4a34?auto=format&fit=crop&w=1400&q=80", w: 4, h: 5, cat: "Treatments" },
-  { src: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1400&q=80", w: 4, h: 3, cat: "Before/After" },
-  { src: "https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=1400&q=80", w: 3, h: 4, cat: "Treatments" },
-  { src: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=1400&q=80", w: 4, h: 3, cat: "Clinic" },
-  { src: "https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&fit=crop&w=1400&q=80", w: 4, h: 5, cat: "Clinic" },
+  {
+    src: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1400&q=80",
+    w: 4,
+    h: 5,
+    cat: "Clinic",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1400&q=80",
+    w: 4,
+    h: 3,
+    cat: "Clinic",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1400&q=80",
+    w: 3,
+    h: 4,
+    cat: "Treatments",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1400&q=80",
+    w: 4,
+    h: 5,
+    cat: "Treatments",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1581585093487-7a909a76b09b?auto=format&fit=crop&w=1400&q=80",
+    w: 4,
+    h: 3,
+    cat: "Treatments",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1559591935-c6c92c6cdc44?auto=format&fit=crop&w=1400&q=80",
+    w: 3,
+    h: 4,
+    cat: "Team",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=1400&q=80",
+    w: 4,
+    h: 3,
+    cat: "Team",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1612277795421-9bc7706a4a34?auto=format&fit=crop&w=1400&q=80",
+    w: 4,
+    h: 5,
+    cat: "Treatments",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1400&q=80",
+    w: 4,
+    h: 3,
+    cat: "Before/After",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=1400&q=80",
+    w: 3,
+    h: 4,
+    cat: "Treatments",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=1400&q=80",
+    w: 4,
+    h: 3,
+    cat: "Clinic",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&fit=crop&w=1400&q=80",
+    w: 4,
+    h: 5,
+    cat: "Clinic",
+  },
 ];
 
 export const BEFORE_AFTER = [
   {
-    before: "https://images.unsplash.com/photo-1612277795421-9bc7706a4a34?auto=format&fit=crop&w=1400&q=80",
-    after: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1400&q=80",
+    before:
+      "https://images.unsplash.com/photo-1612277795421-9bc7706a4a34?auto=format&fit=crop&w=1400&q=80",
+    after:
+      "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1400&q=80",
     label: "Whitening & Smile Design",
   },
   {
-    before: "https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=1400&q=80",
-    after: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1400&q=80",
+    before:
+      "https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=1400&q=80",
+    after:
+      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1400&q=80",
     label: "Orthodontic Alignment",
   },
 ];

@@ -17,28 +17,41 @@ export function MapContact() {
         </div>
         <div>
           <p className="eyebrow mb-4">Visit Us</p>
-          <h2 className="font-serif text-4xl md:text-5xl">Find your way to <span className="italic text-sage-dark">calmer</span> dentistry.</h2>
+          <h2 className="font-serif text-4xl md:text-5xl">
+            Find your way to <span className="italic text-sage-dark">calmer</span> dentistry.
+          </h2>
 
           <div className="mt-8 space-y-5">
             <div className="flex items-start gap-4">
               <MapPin className="h-5 w-5 mt-1 text-sage-dark shrink-0" />
               <div>
                 <p className="text-charcoal">{CLINIC.address}</p>
-                <a href={CLINIC.mapsDirections} target="_blank" rel="noreferrer" className="mt-2 inline-flex items-center gap-1 text-sm text-sage-dark hover:underline">
+                <a
+                  href={CLINIC.mapsDirections}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-2 inline-flex items-center gap-1 text-sm text-sage-dark hover:underline"
+                >
                   Get Directions <ArrowUpRight className="h-4 w-4" />
                 </a>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <Phone className="h-5 w-5 mt-1 text-sage-dark shrink-0" />
-              <a href={`tel:${CLINIC.phoneRaw}`} className="text-charcoal hover:text-sage-dark">{CLINIC.phone}</a>
+              <a href={`tel:${CLINIC.phoneRaw}`} className="text-charcoal hover:text-sage-dark">
+                {CLINIC.phone}
+              </a>
             </div>
             <div className="flex items-start gap-4">
               <Clock className="h-5 w-5 mt-1 text-sage-dark shrink-0" />
               <div className="w-full">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className={`inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] ${open ? 'text-sage-dark' : 'text-taupe'}`}>
-                    <span className={`h-2 w-2 rounded-full ${open ? 'bg-sage animate-pulse' : 'bg-taupe'}`} />
+                  <span
+                    className={`inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] ${open ? "text-sage-dark" : "text-taupe"}`}
+                  >
+                    <span
+                      className={`h-2 w-2 rounded-full ${open ? "bg-sage animate-pulse" : "bg-taupe"}`}
+                    />
                     {open ? "Open Now" : "Closed"}
                   </span>
                 </div>
@@ -56,7 +69,12 @@ export function MapContact() {
             </div>
           </div>
 
-          <a href={CLINIC.mapsDirections} target="_blank" rel="noreferrer" className="mt-8 inline-flex items-center gap-2 rounded-sm bg-sage-dark px-6 py-3 text-xs uppercase tracking-[0.18em] text-ivory hover:bg-charcoal transition-colors">
+          <a
+            href={CLINIC.mapsDirections}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-8 inline-flex items-center gap-2 rounded-sm bg-sage-dark px-6 py-3 text-xs uppercase tracking-[0.18em] text-ivory hover:bg-charcoal transition-colors"
+          >
             Get Directions <ArrowUpRight className="h-4 w-4" />
           </a>
         </div>

@@ -1,7 +1,17 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 
-export function ServiceCard({ slug, title, short, image }: { slug: string; title: string; short: string; image: string }) {
+export function ServiceCard({
+  slug,
+  title,
+  short,
+  image,
+}: {
+  slug: string;
+  title: string;
+  short: string;
+  image: string;
+}) {
   return (
     <Link
       to="/services"
@@ -9,7 +19,11 @@ export function ServiceCard({ slug, title, short, image }: { slug: string; title
       className="group relative block overflow-hidden rounded-sm bg-ivory border border-blush/40 transition-all duration-500 hover:shadow-[0_30px_60px_-30px_rgba(46,43,39,0.25)] hover:-translate-y-1"
     >
       <div className="aspect-[4/3] overflow-hidden">
-        <img src={image} alt={title} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+        <img
+          src={image}
+          alt={title}
+          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
       </div>
       <div className="p-7">
         <h3 className="font-serif text-2xl text-charcoal">{title}</h3>

@@ -151,15 +151,23 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  h1, h2, h3, h4, h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     font-family: var(--font-serif);
     font-weight: 400;
     letter-spacing: -0.01em;
     color: var(--color-charcoal);
   }
 
-  .font-serif { font-family: var(--font-serif); }
-  .font-sans { font-family: var(--font-sans); }
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
   .eyebrow {
     font-family: var(--font-sans);
     text-transform: uppercase;
