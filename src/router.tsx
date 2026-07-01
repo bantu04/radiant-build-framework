@@ -10,7 +10,7 @@ export const getRouter = () => {
     context: { queryClient },
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
-    basePath: "/radiant-build-framework",
+    basepath: "/radiant-build-framework",
   });
 
   return router;
